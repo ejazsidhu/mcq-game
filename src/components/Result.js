@@ -1,12 +1,11 @@
-import React from "react";
+import React from 'react';
+const Results=({score,playAgain})=>{
+  return (
+    <div className="score-card">
+      <div className="score">You scored {score} / 5 correct answers!</div>
+      <button className="playBtn" onClick={()=>{playAgain()}}>playAgain</button>
+    </div>
 
-const Result = ({score, playAgain}) => (
-  <div className="score-board">
-    <div className="score">You scored {score} / 5 correct answers!</div>
-    <button className="playBtn" onClick={playAgain}>
-      Play again!
-    </button>
-  </div>
-);
-
-export default Result;
+  )
+}
+export default Results;
